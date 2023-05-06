@@ -24,7 +24,7 @@ module.exports = {
             },
             rules: {
                 // override/add rules settings here, such as:
-                // "astro/no-set-html-directive": "error"
+                "astro/no-set-html-directive": "error"
             },
         },
     ],
@@ -38,5 +38,7 @@ module.exports = {
         "@typescript-eslint"
     ],
     "rules": {
+        "react/jsx-uses-react": "off",
+        "react/react-in-jsx-scope": "off",
     }
 }
