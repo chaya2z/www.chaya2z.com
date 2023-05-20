@@ -1,4 +1,4 @@
-const Header = ({ title }: { title: string }) => {
+function Header({ title }: { title: string }) {
   return (
     <header>
       <div className="flex justify-center p-6 mb-2 bg-gray-200">
@@ -8,6 +8,6 @@ const Header = ({ title }: { title: string }) => {
       </div>
     </header>
   );
-};
+}
 
 export default Header;
