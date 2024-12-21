@@ -9,5 +9,8 @@
       "matchUpdateTypes": ["minor", "patch"],
       "automerge": true
     }
-  ]
+  ],
+  "prHeader": "prHeader",
+  "prFooter": "prFooter",
+  "prBodyNotes": "prBodyNotes"
 }
