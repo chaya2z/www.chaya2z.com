@@ -10,7 +10,7 @@
       "automerge": true
     }
   ],
-  "prHeader": "prHeader",
-  "prFooter": "prFooter",
-  "prBodyNotes": "prBodyNotes"
+  "prHeader": "> [!NOTE]\n> ここが prHeader",
+  "prFooter": "> [!NOTE]\n> ここが prFooter",
+  "prBodyNotes": "> [!NOTE]\n> ここが prBodyNotes"
 }
