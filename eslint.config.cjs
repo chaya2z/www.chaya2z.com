@@ -4,8 +4,6 @@ module.exports = {
     es2021: true,
   },
   extends: [
-    'airbnb',
-    'airbnb/hooks',
     'eslint:recommended',
     'plugin:astro/recommended',
     'plugin:react/recommended',
