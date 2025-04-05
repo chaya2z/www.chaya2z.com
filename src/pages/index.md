@@ -5,9 +5,8 @@ title: "www.chaya2z.com"
 
 ## Profile
 
-- Real Name: Taisuke NAKANO
-- Handle Name: chaya2z
-- Live in: Japan
+- Name: Taisuke NAKANO
+- Screen Name: chaya2z
 
 ## Links
 
