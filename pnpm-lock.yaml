@@ -25,7 +25,7 @@ importers:
         version: 19.2.3(@types/react@19.2.9)
       astro:
         specifier: ^5.5.4
-        version: 5.16.13(@types/node@25.0.2)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.56.0)(typescript@5.8.3)
+        version: 5.16.14(@types/node@25.0.2)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.56.0)(typescript@5.8.3)
       react:
         specifier: ^19.0.0
         version: 19.2.3
@@ -1172,8 +1172,8 @@ packages:
     resolution: {integrity: sha512-JepyLROIad6f44uyqMF6HKE2QbunNzp3mYKRcPoDGt0QkxXmH222FAFC64WTyQu2Kg8NNEXHTN/sWuUId9sSxw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  astro@5.16.13:
-    resolution: {integrity: sha512-k8Zgb38wpMpJf2LSVO5mSUx2MyDTA6s11UHLPOjUStbdQow3ueREf2J0lKgXnedGtolMm0eGMbnLp1lxs4sKTw==}
+  astro@5.16.14:
+    resolution: {integrity: sha512-+XtShBCwsL5IezGvSeJTIHoZl3RGDOiB2u54t5phS+3haa0A5kGWXbZAmh5O/xFIv19/1cxHbDFa2i0Ot16SMw==}
     engines: {node: 18.20.8 || ^20.3.0 || >=22.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -4249,7 +4249,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  astro@5.16.13(@types/node@25.0.2)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.56.0)(typescript@5.8.3):
+  astro@5.16.14(@types/node@25.0.2)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.56.0)(typescript@5.8.3):
     dependencies:
       '@astrojs/compiler': 2.13.0
       '@astrojs/internal-helpers': 0.7.5
