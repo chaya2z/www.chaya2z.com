@@ -8,8 +8,10 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "lint": "biome check ./src && eslint src/**/*.astro",
-    "lint-fix": "biome check --write ./src && eslint --cache --fix src/**/*.astro && prettier --write src/**/*.astro"
+    "lint": "biome lint . && eslint .",
+    "lint:fix": "biome lint --write . && eslint --fix .",
+    "fmt": "biome format . && prettier --check .",
+    "fmt:fix": "biome format --write . && prettier --write ."
   },
   "dependencies": {
     "@astrojs/partytown": "^2.1.7",
