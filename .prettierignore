@@ -9,7 +9,6 @@
 **/*.jsonc
 **/*.html
 **/*.css
-**/*.md
 
 # Managed By pnpm
 pnpm-lock.yaml
