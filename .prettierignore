@@ -1,0 +1,15 @@
+# Managed By Biome
+**/*.js
+**/*.jsx
+**/*.mjs
+**/*.cjs
+**/*.ts
+**/*.tsx
+**/*.json
+**/*.jsonc
+**/*.html
+**/*.css
+**/*.md
+
+# Managed By pnpm
+pnpm-lock.yaml
