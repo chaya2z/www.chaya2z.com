@@ -1,6 +1,6 @@
 ---
 layout: ../layouts/Layout.astro
-title: 'www.chaya2z.com'
+title: "www.chaya2z.com"
 ---
 
 ## Profile

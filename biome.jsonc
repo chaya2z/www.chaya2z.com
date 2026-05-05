@@ -4,7 +4,7 @@
     "includes": [
       "**",
       "!**/*.astro", // Managed by ESLint + Prettier
-      "!**/*.yml",   // Ignore unsupported (in progress) file types
+      "!**/*.yml", // Ignore unsupported (in progress) file types
       "!**/*.yaml",
       "!**/*.md"
     ]

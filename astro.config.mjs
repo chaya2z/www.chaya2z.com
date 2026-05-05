@@ -1,4 +1,4 @@
-import { defineConfig } from 'astro/config';
+import { defineConfig } from "astro/config";
 import react from "@astrojs/react";
 
 import tailwindcss from "@tailwindcss/vite";
@@ -7,7 +7,7 @@ import partytown from "@astrojs/partytown";
 // https://astro.build/config
 export default defineConfig({
   integrations: [react(), partytown()],
-  site: 'https://www.chaya2z.com',
+  site: "https://www.chaya2z.com",
   vite: {
     plugins: [tailwindcss()],
   },
