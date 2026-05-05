@@ -1,7 +1,7 @@
 ---
-import '../styles/global.css';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import "../styles/global.css";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export interface Props {
   title: string;
@@ -10,7 +10,7 @@ export interface Props {
 const { frontmatter } = Astro.props;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -21,16 +21,17 @@ const { frontmatter } = Astro.props;
   </head>
   <body>
     <Header title={frontmatter.title} />
-      <div class="flex justify-center">
-        <div class="container max-w-3xl mx-8">
-          <div
-            class="prose
+    <div class="flex justify-center">
+      <div class="container max-w-3xl mx-8">
+        <div
+          class="prose
                    prose-a:text-blue-600
-                   prose-p:text-justify">
-            <slot />
-          </div>
+                   prose-p:text-justify"
+        >
+          <slot />
         </div>
       </div>
+    </div>
     <Footer />
   </body>
 </html>
