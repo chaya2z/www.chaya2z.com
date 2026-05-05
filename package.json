@@ -8,8 +8,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "lint": "eslint src/**/*",
-    "lint-fix": "eslint --cache --fix src/ && prettier --write src/"
+    "lint": "biome check ./src && eslint src/**/*.astro",
+    "lint-fix": "biome check --write ./src && eslint --cache --fix src/**/*.astro && prettier --write src/**/*.astro"
   },
   "dependencies": {
     "@astrojs/partytown": "^2.1.7",
@@ -23,6 +23,7 @@
     "tailwindcss": "^4.2.4"
   },
   "devDependencies": {
+    "@biomejs/biome": "2.4.14",
     "@tailwindcss/typography": "^0.5.19",
     "@typescript-eslint/eslint-plugin": "^8.59.2",
     "@typescript-eslint/parser": "^8.59.2",
