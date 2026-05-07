@@ -1,0 +1,31 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:best-practices", "mergeConfidence:all-badges"],
+  "reviewersFromCodeOwners": true,
+  "minimumReleaseAge": "14 days",
+  "prCreation": "not-pending",
+  "timezone": "Asia/Tokyo",
+  "schedule": ["* 0-4 * * *"],
+  "packageRules": [
+    {
+      "groupName": "Safe Updates (High Confidence)",
+      "description": "Group and automerge high-confidence minor and patch updates.",
+      "matchUpdateTypes": ["minor", "patch"],
+      "matchConfidence": ["high", "very high"],
+      "automerge": true,
+      "platformAutomerge": true,
+      "internalChecksFilter": "strict"
+    },
+    {
+      "description": "Manual review required for updates with low or neutral confidence.",
+      "matchUpdateTypes": ["minor", "patch"],
+      "matchConfidence": ["low", "neutral"],
+      "automerge": false
+    },
+    {
+      "description": "Isolate major updates for manual intervention.",
+      "matchUpdateTypes": ["major"],
+      "automerge": false
+    }
+  ]
+}
