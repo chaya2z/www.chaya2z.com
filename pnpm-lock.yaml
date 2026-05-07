@@ -25,7 +25,7 @@ importers:
         version: 19.2.3(@types/react@19.2.14)
       astro:
         specifier: ^6.2.2
-        version: 6.3.0(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.3)
+        version: 6.3.1(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.3)
       react:
         specifier: ^19.2.5
         version: 19.2.5
@@ -1084,8 +1084,8 @@ packages:
     resolution: {integrity: sha512-+QDcgc7e+au6EZ0YjMmRRjNoQo5bDMlaR45aWDoFsuxQTCM9qmCHRoiKJPELgckJ8Wmr7vcfpa9eCDHBFh6G4w==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  astro@6.3.0:
-    resolution: {integrity: sha512-yhDelVblNzQE4mjS0s27T9BZuAlfRCy+qHk6IlMgSr+ADG5QNpyPkroJAVCFRH08Nf2VhDM5dz6n4GWiTB9TlQ==}
+  astro@6.3.1:
+    resolution: {integrity: sha512-atz6dmkE3Gu24bDgb7g2RE/BYnKqPYIHd6hTUM1UXvu/i7qNZOKLAqEHvgYpv9PQVcgWsXpk4/OOXZ0E/FzvSQ==}
     engines: {node: '>=22.12.0', npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -3324,7 +3324,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  astro@6.3.0(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.3):
+  astro@6.3.1(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.3):
     dependencies:
       '@astrojs/compiler': 4.0.0
       '@astrojs/internal-helpers': 0.9.0
