@@ -1,2 +1,16 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
+
+@theme {
+  --color-midnight-bg: #1a1b26;
+  --color-ice-blue: #7aa2f7;
+  --color-slate-text: #a9b1d6;
+  --color-accent-red: #8e1d1d;
+  --color-tokyo-night-bg: #16161e;
+
+  --font-noto-sans: "Noto Sans JP", sans-serif;
+}
+
+@utility image-pixelated {
+  image-rendering: pixelated;
+}
