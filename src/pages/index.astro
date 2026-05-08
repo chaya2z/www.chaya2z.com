@@ -2,7 +2,9 @@
 import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
 import LinkCard from "../components/LinkCard.astro";
+import { ImageLightbox } from "../components/ImageLightbox";
 import heroImage from "../assets/images/hero.png";
+import expandIcon from "../assets/images/icons/expand.svg";
 
 const links = [
   {
@@ -52,6 +54,16 @@ const links = [
     </div>
 
     <div class="w-[70%] h-full relative overflow-hidden right-area">
+      <ImageLightbox
+        client:load
+        imageSrc={heroImage.src}
+        alt="Hero Image"
+        caption="This photo of Tokyo Station was taken by me and processed using generative AI."
+        className="absolute top-4 right-4 z-20 p-2 bg-black/50 hover:bg-black/70 text-white rounded-full transition-colors cursor-pointer"
+        aria-label="Zoom image"
+      >
+        <img src={expandIcon.src} width="20" height="20" alt="" />
+      </ImageLightbox>
       <Image
         src={heroImage}
         alt=""
