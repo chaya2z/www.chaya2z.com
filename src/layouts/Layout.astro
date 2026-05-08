@@ -1,4 +1,6 @@
 ---
+import "../styles/global.css";
+
 interface Props {
   title: string;
 }
@@ -13,27 +15,11 @@ const { title } = Astro.props;
     <title>{title}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
   </head>
-  <body>
-    <slot />
+  <body
+    class="bg-tokyo-night-bg flex justify-center items-center min-h-screen font-noto-sans m-0 p-0"
+  >
+    <main>
+      <slot />
+    </main>
   </body>
 </html>
-
-<style is:global>
-  :root {
-    --midnight-bg: #1a1b26;
-    --ice-blue: #7aa2f7;
-    --slate-text: #a9b1d6;
-    --accent-red: #8e1d1d;
-  }
-
-  body {
-    margin: 0;
-    padding: 0;
-    background-color: #16161e;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    font-family: "Noto Sans JP", sans-serif;
-  }
-</style>

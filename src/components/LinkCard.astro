@@ -7,40 +7,12 @@ interface Props {
 const { href, label, urlDisplay } = Astro.props;
 ---
 
-<a href={href} target="_blank" class="custom-link">
-  <span class="link-label">{label}</span>
-  <span class="link-url">{urlDisplay}</span>
+<a
+  href={href}
+  target="_blank"
+  rel="noopener noreferrer"
+  class="flex justify-between items-center p-4 px-6 bg-white/3 border border-white/5 rounded-sm no-underline text-slate-text transition-all duration-300 ease-in-out backdrop-blur-sm hover:bg-ice-blue/5 hover:border-ice-blue/40 hover:translate-x-2 hover:text-ice-blue"
+>
+  <span class="font-bold text-lg">{label}</span>
+  <span class="text-xs opacity-50">{urlDisplay}</span>
 </a>
-
-<style>
-  .custom-link {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px 24px;
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 4px;
-    text-decoration: none;
-    color: var(--slate-text);
-    transition: all 0.3s ease;
-    backdrop-filter: blur(4px);
-  }
-
-  .custom-link:hover {
-    background: rgba(122, 162, 247, 0.05);
-    border-color: rgba(122, 162, 247, 0.4);
-    transform: translateX(8px);
-    color: var(--ice-blue);
-  }
-
-  .link-label {
-    font-weight: 700;
-    font-size: 1.1rem;
-  }
-
-  .link-url {
-    font-size: 0.85rem;
-    opacity: 0.5;
-  }
-</style>
