@@ -20,7 +20,7 @@ jobs:
           package-manager: pnpm@10
       - name: Check hash
         id: check_hash
-        uses: ./.github/actions/check-dist-hash
+        uses: ./.github/actions/check-dist-manifest
 
   deploy:
     needs: build

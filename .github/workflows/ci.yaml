@@ -28,7 +28,7 @@ jobs:
       - run: pnpm lint && pnpm fmt
       - name: Check hash
         id: check_hash
-        uses: ./.github/actions/check-dist-hash
+        uses: ./.github/actions/check-dist-manifest
       - name: Comment on PR if no changes
         if: github.event_name == 'pull_request' && steps.check_hash.outputs.is-dirty == 'false'
         run: |
