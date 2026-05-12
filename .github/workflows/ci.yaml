@@ -9,6 +9,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
       - name: Install pnpm
@@ -24,3 +26,10 @@ jobs:
       - run: pnpm install
       - run: pnpm build
       - run: pnpm lint && pnpm fmt
+      - name: Check hash
+        id: check_hash
+        uses: ./.github/actions/check-dist-hash
+      - name: Comment on PR if no changes
+        if: github.event_name == 'pull_request' && steps.check_hash.outputs.is-dirty == 'false'
+        run: |
+          gh pr comment ${{ github.event.pull_request.number }} --body ":fast_forward: Merging this PR will have no impact on the live site as the build output remains unchanged."

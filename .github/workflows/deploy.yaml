@@ -9,6 +9,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-slim
+    outputs:
+      skip-deploy: ${{ steps.check_hash.outputs.is-dirty == 'false' }}
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
       - name: Build and upload artifacts
@@ -16,9 +18,13 @@ jobs:
         with:
           node-version: 24
           package-manager: pnpm@10
+      - name: Check hash
+        id: check_hash
+        uses: ./.github/actions/check-dist-hash
 
   deploy:
     needs: build
+    if: needs.build.outputs.skip-deploy == 'false'
     runs-on: ubuntu-slim
     permissions:
       # ref: https://github.com/actions/deploy-pages#security-considerations
