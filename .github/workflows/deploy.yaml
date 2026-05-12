@@ -21,6 +21,8 @@ jobs:
       - name: Check hash
         id: check_hash
         uses: ./.github/actions/check-dist-manifest
+        with:
+          update-cache: true
 
   deploy:
     needs: build
