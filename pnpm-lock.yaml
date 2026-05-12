@@ -43,25 +43,25 @@ importers:
         specifier: 2.4.14
         version: 2.4.14
       '@tailwindcss/typography':
-        specifier: ^0.5.19
+        specifier: 0.5.19
         version: 0.5.19(tailwindcss@4.2.4)
       '@typescript-eslint/eslint-plugin':
-        specifier: ^8.59.2
+        specifier: 8.59.2
         version: 8.59.2(@typescript-eslint/parser@8.59.2(eslint@10.3.0(jiti@2.6.1))(typescript@6.0.3))(eslint@10.3.0(jiti@2.6.1))(typescript@6.0.3)
       '@typescript-eslint/parser':
-        specifier: ^8.59.2
+        specifier: 8.59.2
         version: 8.59.2(eslint@10.3.0(jiti@2.6.1))(typescript@6.0.3)
       eslint:
-        specifier: ^10.0.0
+        specifier: 10.3.0
         version: 10.3.0(jiti@2.6.1)
       eslint-config-prettier:
-        specifier: ^10.1.8
+        specifier: 10.1.8
         version: 10.1.8(eslint@10.3.0(jiti@2.6.1))
       eslint-plugin-astro:
-        specifier: ^1.7.0
+        specifier: 1.7.0
         version: 1.7.0(eslint@10.3.0(jiti@2.6.1))
       prettier:
-        specifier: ^3.8.3
+        specifier: 3.8.3
         version: 3.8.3
       prettier-plugin-astro:
         specifier: 0.14.1
