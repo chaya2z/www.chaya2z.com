@@ -9,6 +9,8 @@
   --color-tokyo-night-bg: #16161e;
 
   --font-noto-sans: "Noto Sans JP", sans-serif;
+
+  --breakpoint-2xl: 1600px;
 }
 
 @utility image-pixelated {
