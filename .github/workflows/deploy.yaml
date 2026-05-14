@@ -10,7 +10,7 @@ jobs:
   build:
     runs-on: ubuntu-slim
     outputs:
-      skip-deploy: ${{ steps.check_hash.outputs.is-dirty == 'false' }}
+      skip-deploy: ${{ steps.check-hash.outputs.is-dirty == 'false' }}
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
       - name: Build and upload artifacts
@@ -19,7 +19,7 @@ jobs:
           node-version: 24
           package-manager: pnpm@10
       - name: Check hash
-        id: check_hash
+        id: check-hash
         uses: ./.github/actions/check-dist-manifest
         with:
           update-cache: true
