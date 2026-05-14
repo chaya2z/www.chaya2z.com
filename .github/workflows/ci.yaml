@@ -27,9 +27,12 @@ jobs:
       - run: pnpm build
       - run: pnpm lint && pnpm fmt
       - name: Check hash
-        id: check_hash
+        id: check-hash
         uses: ./.github/actions/check-dist-manifest
       - name: Comment on PR if no changes
-        if: github.event_name == 'pull_request' && steps.check_hash.outputs.is-dirty == 'false'
-        run: |
-          gh pr comment ${{ github.event.pull_request.number }} --body ":fast_forward: Merging this PR will have no impact on the live site as the build output remains unchanged."
+        if: github.event_name == 'pull_request' && steps.check-hash.outputs.is-dirty == 'false'
+        run: >
+          gh pr comment ${{ github.event.pull_request.number }}
+          --body ":fast_forward: No changes detected. Merging this PR will skip deployment."
+        env:
+          GH_TOKEN: ${{ github.token }}
