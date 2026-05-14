@@ -26,8 +26,12 @@ const links = [
 ---
 
 <Layout title="chaya2z - Profile">
-  <section class="flex w-400 h-225 overflow-hidden relative main-container">
-    <div class="w-[30%] p-15 px-10 relative flex flex-col z-10 left-area">
+  <section
+    class="flex w-400 h-225 overflow-hidden relative main-container max-2xl:w-full max-2xl:h-screen max-md:flex-col max-md:overflow-y-auto max-md:bg-midnight-bg"
+  >
+    <div
+      class="w-[30%] p-15 px-10 relative flex flex-col z-10 left-area max-2xl:w-120 max-2xl:shrink-0 max-md:w-full max-md:shrink max-md:p-8 max-md:px-6 max-md:z-20 max-md:bg-midnight-bg/60 max-md:backdrop-blur-lg max-md:min-h-screen"
+    >
       <div class="flex flex-col justify-center grow">
         <header class="mb-12.5 relative z-10 header-section">
           <span
@@ -62,7 +66,11 @@ const links = [
       </footer>
     </div>
 
-    <div class="w-[70%] h-full relative overflow-hidden right-area">
+    <div
+      class="w-[70%] h-full relative overflow-hidden right-area max-2xl:flex-1 max-md:fixed max-md:top-0 max-md:left-0 max-md:w-full max-md:h-full max-md:z-10"
+    >
+      <div class="absolute inset-0 bg-midnight-bg/40 z-10 hidden max-md:block">
+      </div>
       <ImageLightbox
         client:load
         imageSrc={heroImage.src}
@@ -76,7 +84,7 @@ const links = [
       <Image
         src={heroImage}
         alt=""
-        class="w-full h-full object-cover image-pixelated bg-image"
+        class="w-full h-full object-cover image-pixelated bg-image max-md:blur-[2px]"
       />
       <div class="rain-container" aria-hidden="true"></div>
     </div>
