@@ -3,10 +3,11 @@
 
 @theme {
   --color-midnight-bg: #1a1b26;
+  --color-tokyo-night-bg: #16161e;
   --color-ice-blue: #7aa2f7;
   --color-slate-text: #a9b1d6;
+  --color-cool-white: #c0caf5;
   --color-accent-red: #8e1d1d;
-  --color-tokyo-night-bg: #16161e;
 
   --font-noto-sans: "Noto Sans JP", sans-serif;
 
