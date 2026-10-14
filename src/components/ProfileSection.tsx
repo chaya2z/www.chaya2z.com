@@ -30,7 +30,7 @@ const ProfileSection: FC<Props> = ({ links }) => (
 
     <footer className="mt-auto pt-10 font-bold uppercase">
       <a
-        href="https://github.com/chaya2z/www.chaya2z.com"
+        href="https://github.com/chaya2z/chaya2z.github.io"
         className="font-mono text-slate-text no-underline transition-colors hover:text-ice-blue"
       >
         source
